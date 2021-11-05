@@ -89,7 +89,7 @@ body{
     overflow: hidden;
 }
 .slide-content{
-    max-width: 400px;
+    max-width: 500px;
     position: relative;
 }
 .slide-text-light{
@@ -102,6 +102,22 @@ body{
     font-weight: bold;
     font-size: 50px;
     line-height: 51px;
+}
+.swiper{
+    position: relative;
+}
+.slider-buttons{
+    position: absolute;
+    right: 46px;
+    bottom: 40px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+.slider-button{
+    cursor: pointer;
 }
 .slide-text{
     font-weight: bold;
@@ -457,4 +473,89 @@ body{
     line-height: 22px;
     text-align: center;
     color: #49494F;
+}
+
+
+@media (max-width: 1260px){
+    .container{
+        max-width: 960px;
+    }
+    .search-form{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tabs-content{
+        flex-wrap: wrap;   
+    }
+    .tabs-card{
+        flex: 50%;
+        max-width: calc(49% - 30px);
+    }
+    .advantage-cards{
+        flex-wrap: wrap;
+    }
+    .advantage-card{
+        max-width: calc(49% - 30px);
+    }
+}
+
+
+@media (max-width: 992px){
+    .container{
+        max-width: 750px;
+    }
+    .slide{
+        padding: 70px;
+    }
+    .delivery-card{
+        width: calc(50% - 30px);
+    }
+    .footer-logo{
+        margin-right: 40px;
+    }
+}
+@media (max-width: 992px){
+    .container{
+        max-width: 760px;
+    }
+    .slide{
+        padding: 70px;
+    }
+    .delivery-card{
+        width: calc(50% - 30px);
+
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 560px;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+    .search-form{
+        order: 5;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .promo{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 576px){
+    .container{
+        max-width: 95%;
+    }
+    .tabs-card{
+        max-width: 100%;
+    }
+    .advantage-card{
+        max-width: 100%;
+    }
+    .delivery-card{
+        width: 100%;
+    }
 }
